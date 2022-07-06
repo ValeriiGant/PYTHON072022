@@ -28,4 +28,38 @@ print(j1,j2,j3,j4,j5,j6,j7,j8,g)
 if g>k:
     print (g)
 else:
-    print (k)    
+    print (k)   
+#username = input ("Введите имя = ")
+#if username == "Сергей":
+ #   print ("Ура, это же Сергей!")
+#elif username == "Ильнар":             #логический оператор
+  #  print ("Ух ты, это же Ильнар!")
+#else:
+    #print ("Привет, ",username,"!")  
+
+original = 23 # ЦИКЛЫ !!!
+inverted = 0
+while original !=0: #не равно 0 !=0
+     inverted=inverted*10+(original % 10)
+     original//=10
+     print(original)
+else:
+    print ("Пожалуй")
+    print ("хватит )")
+print(inverted)
+#Управляющие конструкции
+#for
+for i in range (1, 10, 2):
+    print(i**2)
+# help (int)
+
+def f (x):
+    if x==1:
+        return "Целое"
+    elif x==2.3:
+        return 23
+    else:
+        return
+arg =1
+print(f(arg))
+print(type(f(arg)))

@@ -1,14 +1,32 @@
 # Напишите программу, которая принимает на вход число N и выдаёт последовательность из N членов.
 #*Пример:*  - Для N = 5: 1, -3, 9, -27, 81
-def func(n: int):
-    a = [1]
+def sequence(n: int):
+    sequence_list = [1]
     i = 0
     while i < n-1:
-        a.append(a[i]*-3)
+        sequence_list.append(sequence_list[i]*-3)
         i += 1
-    return a
+    return sequence_list
 
 
 n = int(input('Введите n: '))
-print(func(n))
+print(sequence(n))
 
+# def Input_values(write_what_you_want: str):
+#     for_checking = False
+#     while not for_checking:
+#         try:
+#             number = int(input(f'{write_what_you_want}'))
+#             for_checking = True
+#         except ValueError:
+#             print("Попробуй снова. Ты должен ввести число.")
+#     return number
+
+# def progression(N:int):
+#     help_number = 1
+#     for i in range(N):
+#         print(help_number)
+#         help_number = help_number * -3
+
+# number_N = Input_values("Введите число N: ")
+# progression(number_N)

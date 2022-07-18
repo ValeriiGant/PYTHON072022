@@ -1,5 +1,4 @@
 # Задайте список из n чисел последовательности (1 + 1/n)^n и выведите на экран их сумму.
-# - Для n = 6: {1: 4, 2: 7, 3: 10, 4: 13, 5: 16, 6: 19}
 
 def sequence_list(digit: float) -> list: #sequence - последовательность digit float - число с плавающей запятой
     list0 = []
@@ -22,5 +21,5 @@ def sum_digits_list(list: list) -> float:
 n = int(input("\n Введите список из n чисел: "))
 list = sequence_list(n)
 sum = sum_digits_list(list)
-print(f"\n Последовательность для заданного n: \n {list}")
+print(f"\n Последовательность для заданного списка n: \n {list}")
 print(f"\n Сумма элементов последовательности {n} = {round(sum,2)}\n")

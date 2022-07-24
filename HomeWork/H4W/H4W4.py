@@ -31,14 +31,3 @@ print(polynom1)
 with open('poly1.txt', 'w') as data:
     data.write(polynom1)
 
-
-# Второй многочлен для следующей задачи:
-
-k = randint(2, 5)
-
-ratios = get_ratios(k) 
-polynom2 = get_polynomial(k, ratios)
-print(polynom2)
-
-with open('poly2.txt', 'w') as data:
-    data.write(polynom2)
